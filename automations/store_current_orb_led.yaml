@@ -1,0 +1,9 @@
+sequence:
+  - action: scene.create
+    data:
+      scene_id: orb_led_temp_state
+      snapshot_entities:
+        - light.orbassistant_orb_assistant_led
+alias: Store Current Orb LED
+description: ""
+

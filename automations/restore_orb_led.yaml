@@ -1,0 +1,17 @@
+alias: Restore Orb LED
+description: ""
+triggers:
+  - trigger: state
+    entity_id:
+      - assist_satellite.bedroom_orbassistant_assist_satellite
+    to:
+      - idle
+conditions: []
+actions:
+  - action: scene.turn_on
+    metadata: {}
+    target:
+      entity_id: scene.orb_led_temp_state
+    data: {}
+mode: single
+
